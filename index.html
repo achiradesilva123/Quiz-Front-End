@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Assests/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assests/css/css/main.css">
+    <style>
+       #dash{
+           display: none;
+       }
+    </style>
+
+</head>
+<body>
+<!--start Home-->
+<section class="container-fluid" id="login">
+    <div style="max-width: 500px" id="home-form" >
+       <p id="from">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="button" class="btn btn-primary" id="btn-submit">Submit</button>
+        </form>
+    </p>
+
+    </div>
+</section>
+<!--End Home-->
+
+<!--Start Dash-->
+<section class="container-fluid" id="dash">
+   <div class="dash-form">
+       <nav>
+       <div class="home">Home</div>
+       <ul>
+           <li id="menu-icon"><i class="fa fa-bars"></i></li>
+           <li class="list-item hide"><a href="#">About</a></li>
+           <li class="list-item hide"><a href="#">Work</a></li>
+           <li class="list-item hide"><a href="#">Contact</a></li>
+       </ul>
+       </nav>
+       <div class="input">
+          <input type="text" placeholder="Paper Name" id="input-Pname">
+          <input type="text" placeholder="Paper Type" id="input-Ptype">
+          <input type="text" placeholder="Number of Quections" id="input-PnoOfQ">
+          <input type="text" placeholder="Number of Answers" id="input-PnoOfA">
+          <input type="button" value="Sumbit" id="btn-create" class="bg-warning">
+       </div>
+
+       <div id="cards">
+
+       </div>
+   </div>
+</section>
+<!--End Dash-->
+<script src="Assests/js/jquery-3.5.1.min.js"></script>
+<script src="Assests/js/controller/cardController.js"></script>
+<script src="Assests/js/controller/navigationController.js"></script>
+<script src="Assests/css/js/bootstrap.esm.min.js"></script>
+<script src="Assests/js/main.js"></script>
+</body>
+</html>
